@@ -29,10 +29,12 @@ header {
     background: var(--branco);
     min-height: 80px;
     padding: 15px 7%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -73,9 +75,12 @@ nav a.ativo {
 nav a.ativo::after {
     content: "";
     position: absolute;
+
     width: 100%;
     height: 2px;
+
     background: var(--rosa);
+
     left: 0;
     bottom: -7px;
 }
@@ -84,10 +89,13 @@ nav a.ativo::after {
 
 .hero {
     min-height: 620px;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
     padding: 70px 8%;
+
     background:
         linear-gradient(
             90deg,
@@ -150,20 +158,27 @@ h2 {
 
 .botao {
     display: inline-block;
+
     background: var(--rosa);
     color: white;
+
     padding: 14px 25px;
+
     border-radius: 4px;
-    text-decoration: none;
     border: 2px solid var(--rosa);
+
+    text-decoration: none;
     font-weight: 600;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .botao:hover {
     background: var(--vinho);
     border-color: var(--vinho);
+
     transform: translateY(-3px);
 }
 
@@ -177,7 +192,9 @@ h2 {
 
 .titulo {
     text-align: center;
+
     max-width: 700px;
+
     margin: 0 auto 45px;
 }
 
@@ -189,63 +206,90 @@ h2 {
 
 .cards {
     display: flex;
+
     justify-content: center;
     align-items: stretch;
+
     gap: 25px;
+
     flex-wrap: wrap;
 }
 
 .card {
     background: white;
+
     padding: 35px 28px;
+
     flex: 1 1 280px;
+
     max-width: 360px;
+
     border-radius: 8px;
+
     border-bottom: 3px solid transparent;
+
     box-shadow: 0 8px 25px rgba(70, 35, 45, 0.08);
+
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
+
     border-bottom-color: var(--rosa);
+
     box-shadow: 0 15px 35px rgba(70, 35, 45, 0.15);
 }
 
 .card h3 {
     font-family: 'Playfair Display', serif;
+
     color: var(--vinho);
+
     font-size: 24px;
+
     margin: 10px 0;
 }
 
 .card p {
     color: var(--cinza);
+
     font-size: 14px;
+
     margin-bottom: 18px;
 }
 
 .card strong {
     color: var(--rosa);
+
     display: block;
+
     margin-top: 15px;
 }
 
 .icone {
     width: 55px;
     height: 55px;
+
     background: var(--rosa-claro);
+
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     border-radius: 50%;
+
     font-size: 25px;
 }
 
 .link {
     color: var(--rosa);
+
     text-decoration: none;
+
     font-weight: 700;
+
     font-size: 14px;
 }
 
@@ -257,12 +301,18 @@ h2 {
 
 .destaque {
     background: var(--vinho);
+
     color: white;
+
     padding: 80px 8%;
+
     display: flex;
+
     justify-content: space-between;
     align-items: center;
+
     gap: 60px;
+
     flex-wrap: wrap;
 }
 
@@ -272,37 +322,48 @@ h2 {
 
 .destaque h2 {
     color: white;
+
     margin: 12px 0 20px;
 }
 
 .destaque p {
     max-width: 600px;
+
     margin-bottom: 25px;
 }
 
 .destaque .botao {
     background: white;
+
     color: var(--vinho);
+
     border-color: white;
 }
 
 .destaque .botao:hover {
     background: var(--rosa);
+
     color: white;
+
     border-color: var(--rosa);
 }
 
 .destaque-box {
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     gap: 15px;
+
     flex-wrap: wrap;
 }
 
 .destaque-box strong {
     font-family: 'Playfair Display', serif;
+
     font-size: 45px;
+
     color: #f3aabd;
 }
 
@@ -314,13 +375,17 @@ h2 {
 
 .pagina-topo {
     background: var(--rosa-claro);
+
     text-align: center;
+
     padding: 80px 20px;
 }
 
 .pagina-topo h1 {
     font-size: 60px;
+
     color: var(--vinho);
+
     margin: 5px 0;
 }
 
@@ -332,7 +397,9 @@ h2 {
 
 .chamada {
     text-align: center;
+
     background: var(--rosa-claro);
+
     padding: 70px 20px;
 }
 
@@ -342,6 +409,7 @@ h2 {
 
 .chamada p {
     margin-bottom: 25px;
+
     color: var(--cinza);
 }
 
@@ -349,23 +417,31 @@ h2 {
 
 .galeria {
     display: flex;
+
     justify-content: center;
     align-items: stretch;
+
     gap: 20px;
+
     flex-wrap: wrap;
 }
 
 .foto {
     flex: 1 1 300px;
+
     height: 300px;
+
     overflow: hidden;
+
     border-radius: 8px;
 }
 
 .foto img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     transition: 0.5s;
 }
 
@@ -377,12 +453,18 @@ h2 {
 
 .agendamento {
     max-width: 1100px;
+
     margin: auto;
+
     padding: 80px 6%;
+
     display: flex;
+
     justify-content: space-between;
     align-items: flex-start;
+
     gap: 60px;
+
     flex-wrap: wrap;
 }
 
@@ -396,13 +478,17 @@ h2 {
 
 .info-agendamento > p {
     color: var(--cinza);
+
     margin-bottom: 30px;
 }
 
 .informacao {
     display: flex;
+
     flex-direction: column;
+
     gap: 3px;
+
     margin: 20px 0;
 }
 
@@ -414,21 +500,33 @@ h2 {
     color: var(--cinza);
 }
 
+/* FORMULÁRIO */
+
 form {
     flex: 1 1 450px;
+
     background: white;
+
     padding: 35px;
+
     border-radius: 8px;
+
     box-shadow: 0 10px 35px rgba(70, 35, 45, 0.1);
+
     display: flex;
+
     flex-direction: column;
+
     gap: 8px;
 }
 
 label {
     font-size: 13px;
+
     font-weight: 600;
+
     color: var(--vinho);
+
     margin-top: 8px;
 }
 
@@ -436,11 +534,17 @@ input,
 select,
 textarea {
     width: 100%;
+
     padding: 13px;
+
     border: 1px solid #ddd;
+
     border-radius: 4px;
+
     font-family: 'Montserrat', sans-serif;
+
     outline: none;
+
     background: #fffdfc;
 }
 
@@ -448,6 +552,7 @@ input:focus,
 select:focus,
 textarea:focus {
     border-color: var(--rosa);
+
     box-shadow: 0 0 0 2px var(--rosa-claro);
 }
 
@@ -457,6 +562,7 @@ textarea {
 
 form .botao {
     margin-top: 15px;
+
     width: 100%;
 }
 
@@ -464,12 +570,18 @@ form .botao {
 
 footer {
     background: #241b1f;
+
     color: #d7cdd0;
+
     padding: 40px 7%;
+
     display: flex;
+
     justify-content: space-between;
     align-items: center;
+
     gap: 25px;
+
     flex-wrap: wrap;
 }
 
@@ -487,6 +599,7 @@ footer p {
 
     header {
         flex-direction: column;
+
         padding: 20px;
     }
 
@@ -496,6 +609,7 @@ footer p {
 
     .hero {
         min-height: 550px;
+
         padding: 50px 7%;
     }
 
@@ -541,6 +655,8 @@ footer p {
 
     footer {
         justify-content: center;
+
         text-align: center;
     }
+
 }
