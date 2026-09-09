@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento | Bella Arte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Bella <span>Arte</span></div>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="unhas.html">Unhas</a>
+        <a href="estetica.html">Estética</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="agendamento.html" class="ativo">Agendamento</a>
+    </nav>
+</header>
+
+<section class="pagina-topo">
+    <p class="subtitulo">RESERVE SEU MOMENTO</p>
+    <h1>Agendamento</h1>
+    <p>Preencha o formulário e solicite seu horário.</p>
+</section>
+
+<section class="agendamento">
+
+    <div class="info-agendamento">
+        <p class="subtitulo">BELLA ARTE</p>
+        <h2>Vamos cuidar de você?</h2>
+
+        <p>
+            Escolha o serviço desejado, informe seus dados
+            e entraremos em contato para confirmar o horário.
+        </p>
+
+        <div class="informacao">
+            <strong>📍 Endereço</strong>
+            <span>Rua das Flores, 120 - Centro</span>
+        </div>
+
+        <div class="informacao">
+            <strong>📞 Telefone</strong>
+            <span>(16) 99999-9999</span>
+        </div>
+
+        <div class="informacao">
+            <strong>🕐 Horários</strong>
+            <span>Segunda a sábado, das 9h às 19h</span>
+        </div>
+    </div>
+
+    <form>
+
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@email.com">
+
+        <label for="servico">Serviço desejado</label>
+        <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option>Corte Feminino</option>
+            <option>Escova</option>
+            <option>Coloração</option>
+            <option>Manicure</option>
+            <option>Pedicure</option>
+            <option>Alongamento de Unhas</option>
+            <option>Limpeza de Pele</option>
+            <option>Massagem Relaxante</option>
+            <option>Design de Sobrancelhas</option>
+        </select>
+
+        <label for="data">Data desejada</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="horario">Horário desejado</label>
+        <select id="horario" name="horario">
+            <option>09:00</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+        </select>
+
+        <label for="mensagem">Observações</label>
+        <textarea id="mensagem" name="mensagem" rows="4"
+            placeholder="Digite alguma observação..."></textarea>
+
+        <button type="submit" class="botao">Solicitar agendamento</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <div class="logo">Bella <span>Arte</span></div>
+    <p>© 2026 Bella Arte Salão de Beleza.</p>
+    <p>📍 Rua das Flores, 120 • Centro</p>
+</footer>
+
+</body>
+</html>
